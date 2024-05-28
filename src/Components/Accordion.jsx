@@ -27,7 +27,7 @@ function Accordion() {
             <div className="w-full h-screen flex justify-center items-center flex-col gap-5 mb-20">
                 <div className=" text-white flex justify-center items-center flex-col gap-5">
                     <button
-                        className="p-2 mt-10 bg-orange-500 rounded-xl hover:bg-orange-700"
+                        className="p-2 mt-40 bg-orange-500 rounded-xl hover:bg-orange-700"
                         onClick={() => setMultiBtn(!multiBtn)}
                     >
                         Enable multiple Selection
@@ -36,7 +36,7 @@ function Accordion() {
                         Data.map((data) => (
                             <div
                                 key={data.id}
-                                className="w-60 h-26 bg-orange-700 text-white cursor-pointer hover:bg-orange-600 rounded-xl"
+                                className="w-60 h-26 bg-orange-700 text-white cursor-pointer hover:bg-orange-600 rounded-xl "
                                 onClick={
                                     multiBtn
                                         ? () => handleMultipleSelect(data.id)
